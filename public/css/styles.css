@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9e0b4 !important;
+}
+
+#mainBox {
+    width: 700px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+input, select, button {
+    margin: 5px;
+    padding: 8px;
+}
+
+input[type="number"],
+input[type="text"],
+select {
+    width: 220px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.modal-content {
+    background-color: #f5e6cc;
+}
+
+.modal-header,
+.modal-footer {
+    background-color: #ecd9b0;
+}
