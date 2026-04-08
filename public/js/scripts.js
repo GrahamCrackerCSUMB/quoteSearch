@@ -9,11 +9,13 @@ async function getAuthorInfo(event) {
 
     var myModal = new bootstrap.Modal(document.getElementById('authorModal'));
     myModal.show();
-    let url = `/api/author/${this.id}`;
+
+    let authorId = this.dataset.authorId;
+    let url = `/api/author/${authorId}`;
     let response = await fetch(url);
     let data = await response.json();
-    let author = data[0];
 
+    let author = data[0];
     let authorInfo = document.querySelector("#authorInfo");
 
     authorInfo.innerHTML = `

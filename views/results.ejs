@@ -13,9 +13,9 @@
         <% } %>
 
         -- <em>
-            <a href="#" id="<%= i.authorId %>">
-                <%= i.firstName %> <%= i.lastName %>
-            </a>
+        <a href="#" class="authorLink" data-author-id="<%= i.authorId %>">
+            <%= i.firstName %> <%= i.lastName %>
+        </a>
         </em>
 
         <br><br>
@@ -24,11 +24,11 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="authorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="authorModal" tabindex="-1" aria-labelledby="authorModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Author Information</h1>
+        <h5 class="modal-title" id="authorModalLabel">Author Information</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -40,6 +40,7 @@
     </div>
   </div>
 </div>
+
 <script src="/js/scripts.js"></script>
 <div id="authorInfo"></div>
 <%- include("partials/footer.ejs")%>
